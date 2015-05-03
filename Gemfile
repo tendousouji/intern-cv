@@ -38,6 +38,8 @@ gem 'thin'
 gem 'slim-rails'
 # High Voltage for static Pages
 gem 'high_voltage'
+#
+gem 'bootstrap-sass'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
