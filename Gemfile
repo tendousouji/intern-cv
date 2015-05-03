@@ -40,6 +40,8 @@ gem 'slim-rails'
 gem 'high_voltage'
 #
 gem 'bootstrap-sass'
+# Install Postgres Database
+gem 'bg'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
