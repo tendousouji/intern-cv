@@ -31,10 +31,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+#
 # Use Thin for app server
 gem 'thin'
 # Use Slim in editor
 gem 'slim-rails'
+# High Voltage for static Pages
+gem 'high_voltage'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
