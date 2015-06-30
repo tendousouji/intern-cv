@@ -9,5 +9,24 @@ body
   border-radius: 5px
   h3
     padding: 8px 0
+.pos-description
+  font-size: 14px
+.tag
+  border: 2px solid blue
+  padding: 5px 0
+  &:hover
+    cursor: pointer
+    a
+      color: black
+      margin-left: 10px
 .navbar
   border: 2px solid red
+  a
+    color: rgba(0, 0, 0, 0.5)
+    text-transform: uppercase
+    text-decoration: none
+    font-size: 15px
+    transition: margin 0.5s ease
+@media (max-width: 700px)
+  .navbar
+    display: none
