@@ -6,12 +6,34 @@
   position: absolute
   left: -7px
   top: 10px
+  @media (max-width: 960px)
+    display: none
+
+.menu-bar
+  text-align: center
+  display: none
+  height: 50px
+  line-height: 50px
+  width: 100%
+  background: rgba(255, 255, 255, 0.5)
+  &:hover
+    cursor: pointer
+  @media (max-width: 960px)
+    display: block
 
 .tag
   border-left: 4px solid rgba(186, 186, 186, 0.2)
   position: relative
   padding: 5px 0
   margin-left: 10px
+  @media (max-width: 960px)
+    margin: 0
+    padding: 0
+    text-align: center
+    border: none
+    background: rgba(255, 255, 255, 0.5)
+    height: 35px
+    line-height: 35px
   &:hover
     cursor: pointer
     .circle
@@ -20,12 +42,25 @@
     a
       color: black
       margin-left: 35px
+      @media (max-width: 960px)
+        margin: 0
+    @media (max-width: 960px)
+      background: rgba(186, 186, 186, 0.2)
 
 .navbar
-  padding-left: 30px
-  top: 200px
+  padding-left: 20px
+  top: 30%
   width: 300px
   position: fixed
+  transition: height 1.5s ease
+  @media (max-width: 960px)
+    position: static
+    padding: 0
+    width: 100%
+    height: 50px
+    overflow: hidden
+  &.more
+    height: 295px
   a
     color: rgba(0, 0, 0, 0.5)
     text-transform: uppercase
@@ -33,3 +68,6 @@
     font-size: 13px
     margin-left: 25px
     transition: margin 0.5s ease
+    @media (max-width: 960px)
+      margin: 0
+      color: black

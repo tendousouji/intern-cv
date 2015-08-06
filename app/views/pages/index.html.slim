@@ -1,6 +1,7 @@
-.row
-  .col-md-2.col-sm-2.col-xs-0
-    == render "pages/navbar"
-  .col-md-8.col-sm-8.col-xs-12.container-fluid
-    section#home
-      == render "pages/home"
+.container-fluid
+  .row
+    .col-md-2.col-sm-12.col-xs-12
+      == render "pages/navbar"
+    .col-md-8.col-sm-12.col-xs-12
+      section#home
+        == render "pages/home"
