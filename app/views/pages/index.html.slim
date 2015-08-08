@@ -5,3 +5,14 @@
     .col-md-8.col-sm-12.col-xs-12
       section#home
         == render "pages/home"
+      section#profile
+        .row
+          .col-md-5.col-sm-0.col-xs-0
+            .section-icon
+              = fa_icon "user"
+          .col-md-7.col-sm-12.col-xs-12
+            .section-title
+              .title-icon
+                = fa_icon "times", class: "fa-2x"
+              h4 PROFILE
+
