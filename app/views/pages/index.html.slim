@@ -6,26 +6,11 @@
       section#home
         == render "pages/home"
       section#profile
-        .row
-          .col-md-5.col-sm-0.col-xs-0
-            .section-icon#profile-icon
-              = fa_icon "user"
-          .col-md-7.col-sm-12.col-xs-12
-            .section-title
-              .title-icon
-                = fa_icon "times", class: "fa-2x"
-              h4 PROFILE
-            .section-content
-              .content-circle
-              h5 FULL NAME
-              p NGUYEN MINH TRI
-            .section-content
-              .content-circle
-              h5 BORN
-              p 09 January 1994
-              p HoChiMinh City, Vietnam
-            .section-content
-              .content-circle
-              h5 GITHUB ACCOUNT
-              p https://github.com/tendousouji
+        == render "pages/profile"
+      section#education
+        == render "pages/education"
+      section#contact
+        == render "pages/contact"
+      .return
+        == render "pages/return"
 
