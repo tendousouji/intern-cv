@@ -1,1 +1,16 @@
-h1 Hello World
+.container-fluid
+  .row
+    .col-md-2.col-sm-12.col-xs-12
+      == render "pages/navbar"
+    .col-md-8.col-sm-12.col-xs-12
+      section#home
+        == render "pages/home"
+      section#profile
+        == render "pages/profile"
+      section#education
+        == render "pages/education"
+      section#contact
+        == render "pages/contact"
+      .return
+        == render "pages/return"
+
