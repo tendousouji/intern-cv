@@ -58,32 +58,53 @@ section
 
 .bars
   width: 100%
-  height: 10px
+  height: 20px
   border-radius: 15px
   background: rgba(186, 186, 186, 0.5)
 
-#html
+.bars-content
   @extend .bars
+  font-size: 14px
+  line-height: 20px
+  text-align: right
+  color: white
+  font-weight: bold
+  padding-right: 10px
+  background: black
+
+#html
+  @extend .bars-content
   background: #ffad00
   width: 90%
 
 #css
-  @extend .bars
+  @extend .bars-content
   background: #ffad00
   width: 90%
 
 #js
-  @extend .bars
+  @extend .bars-content
   background: #ffad00
   width: 75%
 
+#rails
+  @extend .bars-content
+  background: #ff0000
+  width: 60%
+
+#php
+  @extend .bars-content
+  background: #ff0000
+  width: 50%
+
+
 #viet
-  @extend .bars
+  @extend .bars-content
   background: #00aca5
   width: 85%
 
 #eng
-  @extend .bars
+  @extend .bars-content
   background: #00aca5
   width: 70%
 
