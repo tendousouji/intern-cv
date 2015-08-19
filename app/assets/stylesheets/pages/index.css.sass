@@ -9,15 +9,15 @@ body
 
 section
   height: 100%
-  //border: 2px solid red
 
-//=====Home Section=====
+// =====Home Section=====
 #home
   padding-bottom: 100px
   @media (max-width: 960px)
     margin-top: 60px
 
-//=====Profile Section=====
+// =====Profile Section=====
+
 #profile-icon
   background: #9300ff
 
@@ -34,17 +34,100 @@ section
     color: black
     text-decoration: none
 
-//=====Education Section=====
+// =====Education Section=====
+
 #edu-icon
   background: #07b500
 
-//=====Contact Section=====
-#contact-icon
-  background: #07b500
+// =====Experience Section=====
+
+#exp-icon
+  background: #00a7ff
+
+// =====Skill Section=====
+
+#skill-icon
+  background: #ffad00
   i
     font-weight: bold
 
-//=====Return Section=====
+#skill-icon-person
+  background: #00aca5
+  i
+    font-weight: bold
+
+.bars
+  width: 100%
+  height: 20px
+  border-radius: 15px
+  background: rgba(186, 186, 186, 0.5)
+
+.bars-content
+  @extend .bars
+  font-size: 14px
+  line-height: 20px
+  text-align: right
+  color: white
+  font-weight: bold
+  padding-right: 10px
+  background: black
+
+#html
+  @extend .bars-content
+  background: #ffad00
+  width: 90%
+
+#css
+  @extend .bars-content
+  background: #ffad00
+  width: 90%
+
+#js
+  @extend .bars-content
+  background: #ffad00
+  width: 75%
+
+#rails
+  @extend .bars-content
+  background: #ff0000
+  width: 65%
+
+#php
+  @extend .bars-content
+  background: #ff0000
+  width: 50%
+
+
+#viet
+  @extend .bars-content
+  background: #00aca5
+  width: 85%
+
+#eng
+  @extend .bars-content
+  background: #00aca5
+  width: 70%
+
+// =====Interest Section=====
+
+#interest-icon
+  background: #ff0000
+
+// =====Contact Section=====
+
+#contact-icon
+  background: #07b500
+
+// =====Reference Section=====
+
+#reference-icon
+  background: #00a7ff
+
+// =====Return Section=====
+
+.return
+  margin-bottom: 100px
+
 #return-icon
   background: #ffad00
   &:hover
